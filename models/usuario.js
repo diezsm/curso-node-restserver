@@ -28,7 +28,7 @@ const UsuarioSchema = Schema({
         type: Boolean,
         default: true,
     },
-    goole: {
+    google: {
         type: Boolean,
         default: false,
     },
