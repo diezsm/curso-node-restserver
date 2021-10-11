@@ -28,7 +28,7 @@ const login = async( req, res = response) => {
         }
 
         //Verificar la constraseña
-        const validaPassword = bcrypt.compareSync(password, usuario.password);
+        const validaPassword = bcryptjs.compareSync(password, usuario.password);
         if( !validaPassword ){
             return res.status(400).json({
                 msg:'Usuario / Password no son correctos - password'
